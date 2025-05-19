@@ -55,8 +55,6 @@ Jika ingin langsung melihat dashboard yang sudah ada:
 docker cp metabase-student:/metabase.db/metabase.db.mv.db ./
 ```
 
----
-
 ## ▶️ Menjalankan Prototype
 
 Untuk menjalankan prototype aplikasi dan melakukan prediksi dropout:
@@ -79,8 +77,6 @@ https://student-dropout-prediction-x.streamlit.app/
 3. Faktor ekonomi makro **unemployment rate**, **inflation rate**, dan **GDP** memiliki nilai SHAP yang kecil, artinya kontribusi mereka terhadap kemungkinan dropout **sangat rendah** dibandingkan fitur-fitur lain.
 
 4. **Skema beasiswa** saat ini **belum optimal**. Beasiswa terbukti efektif dalam menekan dropout. Namun, masih banyak mahasiswa dengan tunggakan yang dropout, artinya skema beasiswa belum menjangkau seluruh kelompok yang rentan secara finansial. Karena faktor akademik menyumbang 72,65% penyebab dropout, skema beasiswa perlu mempertimbangkan kombinasi antara kesulitan finansial dan performa akademik agar lebih tepat sasaran.
-
----
 
 ## 🎯 Rekomendasi Actions
 

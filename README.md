@@ -68,15 +68,6 @@ https://student-dropout-prediction-x.streamlit.app/
 
 2. Isi data
 
-```bash
-cd path/to/folder
-python -m venv venv
-venv\Scripts\activate
-python prediction.py
-```
-
---- 
-
 3. Klik button **🔍 Predict Student Status**
 
 ## ✅ Conclusion

@@ -1,4 +1,4 @@
-# 🎓STUDENT DROPOUT DASHBOARD📉
+# 🎓STUDENT PERFORMANCE DASHBOARD📉
 
 ## 🏫 Business Understanding
 

@@ -38,7 +38,7 @@ Cakupan proyek ini meliputi:
    Jalankan perintah berikut di CMD, PowerShell, atau Terminal (bash/zsh):
 
    ```bash
-   git clone [https://github.com/ngaeninurul/student_performace_dashboard.git](https://github.com/ngaeninurul/student_performace_dashboard.git)
+   git clone https://github.com/ngaeninurul/student_performace_dashboard.git
    cd <repository-folder>
    ```
 

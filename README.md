@@ -44,22 +44,20 @@ Cakupan proyek ini meliputi:
 
 3. Setup Environment
 
-    a. Install Python 3  
-   
-   Pastikan Python versi 3.x sudah terinstal.
+    a. Install Python 3
+       Pastikan Python versi 3.x sudah terinstal.
 
-b. Buat virtual environment (opsional tapi direkomendasikan)
+    b. Buat virtual environment (opsional tapi direkomendasikan)
+       Jalankan perintah di bawah ini untuk mengaktifkan virtual environment, sesuaikan dengan sistem operasi serta jenis terminal: 
    
-   Jalankan perintah di bawah ini untuk mengaktifkan virtual environment, sesuaikan dengan sistem operasi serta jenis terminal: 
-   
-   ```bash
-   python -m venv venv
-   source venv/bin/activate     # Linux/macOS bash/zsh
-   venv\Scripts\activate        # Windows CMD
-   .\venv\Scripts\Activate.ps1  # Windows PowerShell
-   ```
+    ```bash
+    python -m venv venv
+    source venv/bin/activate     # Linux/macOS bash/zsh
+    venv\Scripts\activate        # Windows CMD
+    .\venv\Scripts\Activate.ps1  # Windows PowerShell
+    ```
 
-  c. Install dependensi
+      c. Install dependensi
   
      Semua pustaka Python yang dibutuhkan telah tercantum di file `requirements.txt`. Jalankan perintah berikut untuk instalasi:
   

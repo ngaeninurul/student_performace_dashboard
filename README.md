@@ -31,25 +31,61 @@ Cakupan proyek ini meliputi:
 
 **Sumber dataset:** [Students’ Performance Dataset](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
 
-**Setup Environment:**
+## ⚙️ SETUP ENVIRONTMENT & AKSES DASHBOARD
 
-Untuk menjalankan dashboard, gunakan aplikasi **Metabase** melalui Docker:
+1. Clone repository 
+Jalankan perintah berikut di CMD, PowerShell, atau Terminal (bash/zsh):
+```bash
+git clone [<https://github.com/ngaeninurul/student_performace_dashboard.git>](https://github.com/ngaeninurul/student_performace_dashboard.git)
+cd <repository-folder>
+```
 
+2. Setup Environment
+
+a. Install Python 3  
+Pastikan Python versi 3.x sudah terinstal.
+
+b. Buat virtual environment (opsional tapi direkomendasikan)
+Jalankan perintah di bawah ini untuk mengaktifkan virtual environment, sesuaikan dengan sistem operasi serta jenis terminal: 
+```bash
+python -m venv venv
+source venv/bin/activate     # Linux/macOS bash/zsh
+venv\Scripts\activate        # Windows CMD
+.\venv\Scripts\Activate.ps1  # Windows PowerShell
+```
+
+c. Install dependensi
+
+Semua pustaka Python yang dibutuhkan telah tercantum di file `requirements.txt`. Jalankan perintah berikut untuk instalasi:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Jalankan Metabase sebagai Dashboard Tool menggunakan Docker
+Pastikan Docker sudah terpasang dan dijalankan.
 ```bash
 docker pull metabase/metabase:v0.46.4
 docker run -d -p 3000:3000 --name metabase-student metabase/metabase
 ```
 
-Buka browser dan akses:
+4. Akses dashboard melalui browser:
+
 ```
 http://localhost:3000
 ```
 
-Login Metabase dengan:
-- Email: `root@mail.com`
-- Password: `root123`
+5. Login menggunakan:
 
-Jika ingin langsung melihat dashboard yang sudah ada:
+- Email: `root@mail.com`  
+- Password: `root123`  
+
+6. Akses dashboard pada homepage Metabase atau melalui link:
+   ```
+   http://localhost:3000/public/dashboard/32785c20-87f2-4cf0-a961-9e417ecd2988
+   ```
+
+8. (Opsional) Jika ingin menyalin database yang sudah berisi dashboard, jalankan perintah ini:
 
 ```bash
 docker cp metabase-student:/metabase.db/metabase.db.mv.db ./
@@ -67,6 +103,18 @@ https://student-dropout-prediction-x.streamlit.app/
 2. Isi data
 
 3. Klik button **🔍 Predict Student Status**
+
+## 📊 Business Dashboard
+
+Untuk mendukung pengambilan keputusan yang cepat, tepat, dan berbasis data, dikembangkan sebuah **Business Dashboard** menggunakan **Metabase**. Dashboard ini dirancang untuk membantu Jaya-Jaya Institut dalam **memantau performa mahasiswa** dan **mendeteksi risiko dropout sejak dini**. Visualisasi dashboard ini berguna untuk:
+
+- Monitoring **status performa mahasiswa** dan **risiko dropout**.
+- **Analisis faktor utama penyebab dropout**, baik dari sisi akademik maupun finansial, disertai perbandingan kontribusinya.
+- Menampilkan **perbandingan performa akademik mahasiswa dropout vs non-dropout**, membantu memahami pola dan tren performa yang perlu diwaspadai.
+- **Distribusi mahasiswa dropout berdasarkan status beasiswa dan kelancaran pembayaran biaya kuliah**, untuk mengungkap potensi pengaruh kondisi ekonomi.
+- Monitoring **mahasiswa dengan risiko dropout tinggi**, agar dapat dianalisis dan dilakukan pencegahan dini.
+
+Melalui pendekatan berbasis data ini, dashboard bertujuan menjadi **alat bantu preventif** dalam strategi pencegahan dropout, sekaligus meningkatkan efektivitas intervensi yang lebih tepat sasaran. Dengan insight yang disajikan secara ringkas namun komprehensif, pengambilan keputusan kini bisa dilakukan lebih cepat dan berdampak nyata.
 
 ## ✅ Conclusion
 

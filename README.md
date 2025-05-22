@@ -45,6 +45,7 @@ Cakupan proyek ini meliputi:
 3. Setup Environment
 
   a. Install Python 3  
+     
      Pastikan Python versi 3.x sudah terinstal.
   
   b. Buat virtual environment (opsional tapi direkomendasikan)

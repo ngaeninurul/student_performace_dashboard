@@ -119,8 +119,6 @@ Untuk mendukung pengambilan keputusan yang cepat, tepat, dan berbasis data, dike
 - **Distribusi mahasiswa dropout berdasarkan status beasiswa dan kelancaran pembayaran biaya kuliah**, untuk mengungkap potensi pengaruh kondisi ekonomi.
 - Monitoring **mahasiswa dengan risiko dropout tinggi**, agar dapat dianalisis dan dilakukan pencegahan dini.
 
-Melalui pendekatan berbasis data ini, dashboard bertujuan menjadi **alat bantu preventif** dalam strategi pencegahan dropout, sekaligus meningkatkan efektivitas intervensi yang lebih tepat sasaran. Dengan insight yang disajikan secara ringkas namun komprehensif, pengambilan keputusan kini bisa dilakukan lebih cepat dan berdampak nyata.
-
 ## ✅ Conclusion
 
 1. Mahasiswa baru yang memiliki risiko tinggi untuk putus kuliah (dropout) adalah mereka yang memiliki **rasio kelulusan rendah** (approval_ratio), **tunggakan pembayaran** biaya kuliah (Tuition_fees_up_to_date_1), dan **total nilai rendah** (total_grade).

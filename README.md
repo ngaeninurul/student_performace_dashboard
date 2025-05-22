@@ -29,76 +29,82 @@ Cakupan proyek ini meliputi:
 
 ### Persiapan
 
-**Sumber dataset:** [Students’ Performance Dataset](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
+   **Sumber dataset:** [Students’ Performance Dataset](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
 
 ## ⚙️ Setup Environment & Akses Dashboard
 
 1. Clone repository 
-Jalankan perintah berikut di CMD, PowerShell, atau Terminal (bash/zsh):
-```bash
-git clone [<https://github.com/ngaeninurul/student_performace_dashboard.git>](https://github.com/ngaeninurul/student_performace_dashboard.git)
-cd <repository-folder>
-```
 
-2. Setup Environment
+   Jalankan perintah berikut di CMD, PowerShell, atau Terminal (bash/zsh):
+
+   ```bash
+   git clone [https://github.com/ngaeninurul/student_performace_dashboard.git](https://github.com/ngaeninurul/student_performace_dashboard.git)
+   cd <repository-folder>
+   ```
+
+3. Setup Environment
 
 a. Install Python 3  
-Pastikan Python versi 3.x sudah terinstal.
+   Pastikan Python versi 3.x sudah terinstal.
 
 b. Buat virtual environment (opsional tapi direkomendasikan)
-Jalankan perintah di bawah ini untuk mengaktifkan virtual environment, sesuaikan dengan sistem operasi serta jenis terminal: 
-```bash
-python -m venv venv
-source venv/bin/activate     # Linux/macOS bash/zsh
-venv\Scripts\activate        # Windows CMD
-.\venv\Scripts\Activate.ps1  # Windows PowerShell
-```
+   
+   Jalankan perintah di bawah ini untuk mengaktifkan virtual environment, sesuaikan dengan sistem operasi serta jenis terminal: 
+   
+   ```bash
+   python -m venv venv
+   source venv/bin/activate     # Linux/macOS bash/zsh
+   venv\Scripts\activate        # Windows CMD
+   .\venv\Scripts\Activate.ps1  # Windows PowerShell
+   ```
 
 c. Install dependensi
 
-Semua pustaka Python yang dibutuhkan telah tercantum di file `requirements.txt`. Jalankan perintah berikut untuk instalasi:
+   Semua pustaka Python yang dibutuhkan telah tercantum di file `requirements.txt`. Jalankan perintah berikut untuk instalasi:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Jalankan Metabase sebagai Dashboard Tool menggunakan Docker
-Pastikan Docker sudah terpasang dan dijalankan.
-```bash
-docker pull metabase/metabase:v0.46.4
-docker run -d -p 3000:3000 --name metabase-student metabase/metabase
-```
 
-4. Akses dashboard melalui browser:
+   Pastikan Docker sudah terpasang dan dijalankan.
 
-```
-http://localhost:3000
-```
+   ```bash
+   docker pull metabase/metabase:v0.46.4
+   docker run -d -p 3000:3000 --name metabase-student metabase/metabase
+   ```
 
-5. Login menggunakan:
+5. Akses dashboard melalui browser:
 
-- Email: `root@mail.com`  
-- Password: `root123`  
+   ```
+   http://localhost:3000
+   ```
 
-6. Akses dashboard pada homepage Metabase atau melalui link:
+6. Login menggunakan:
+   
+   - Email: `root@mail.com`  
+   - Password: `root123`  
+
+7. Akses dashboard pada homepage Metabase atau melalui link:
    ```
    http://localhost:3000/public/dashboard/32785c20-87f2-4cf0-a961-9e417ecd2988
    ```
 
 8. (Opsional) Jika ingin menyalin database yang sudah berisi dashboard, jalankan perintah ini:
 
-```bash
-docker cp metabase-student:/metabase.db/metabase.db.mv.db ./
-```
+   ```bash
+   docker cp metabase-student:/metabase.db/metabase.db.mv.db ./
+   ```
 
 ## ▶️ Menjalankan Prototype
 
-Untuk menjalankan prototype aplikasi dan melakukan prediksi dropout:
+   Untuk menjalankan prototype aplikasi dan melakukan prediksi dropout:
 
 1. Buka browser dan akses:
-```
-https://student-dropout-prediction-x.streamlit.app/
-```
+   ```
+   https://student-dropout-prediction-x.streamlit.app/
+   ```
 
 2. Isi data
 

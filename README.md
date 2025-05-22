@@ -31,7 +31,7 @@ Cakupan proyek ini meliputi:
 
 **Sumber dataset:** [Students’ Performance Dataset](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md)
 
-## ⚙️ SETUP ENVIRONTMENT & AKSES DASHBOARD
+## ⚙️ Setup Environment & Akses Dashboard
 
 1. Clone repository 
 Jalankan perintah berikut di CMD, PowerShell, atau Terminal (bash/zsh):
